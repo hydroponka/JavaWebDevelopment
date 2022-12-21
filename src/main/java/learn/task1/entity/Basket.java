@@ -1,4 +1,4 @@
-package learn.task1.objects;
+package learn.task1.entity;
 
 import java.util.ArrayList;
 import java.util.List;

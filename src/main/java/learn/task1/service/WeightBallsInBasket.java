@@ -1,9 +1,6 @@
 package learn.task1.service;
 
-import learn.task1.objects.Ball;
-import learn.task1.objects.Basket;
-
-import java.util.List;
+import learn.task1.entity.Basket;
 
 public interface WeightBallsInBasket {
     public int weightOfBallsInBasket(Basket basket);
