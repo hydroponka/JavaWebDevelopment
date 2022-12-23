@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.StringJoiner;
 
 public class Basket {
-    private List<Ball> balls = new ArrayList<>();
+    private List<Ball> balls;
 
     public Basket(List<Ball> balls) {
         this.balls = balls;

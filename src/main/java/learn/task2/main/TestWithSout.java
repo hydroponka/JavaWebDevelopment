@@ -3,23 +3,21 @@ package learn.task2.main;
 import learn.task2.entity.Bouquet;
 import learn.task2.entity.Flower;
 import learn.task2.entity.Order;
-import learn.task2.service.BouquetAttributeOutput;
-import learn.task2.service.impl.BouquetAttributeOutputImpl;
+import learn.task2.entity.TypeOfPackage;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class TestWithSout {
+    static Logger logger = LogManager.getLogger();
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Flower flower1 = new Flower("Tulip");
-        List<Flower> flower = List.of(flower1);
-        Bouquet bouquet = new Bouquet(flower);
-        System.out.println("Введите название название букета");
-        bouquet.setBouquetName(sc.nextLine());
-        System.out.println("Введите название номер заказа, номер клиента, количество букетов");
-        Order order = new Order(sc.nextInt(), sc.nextInt(), bouquet, sc.nextInt() );
-        BouquetAttributeOutput output = new BouquetAttributeOutputImpl();
-        System.out.println(output.attributeOutput(order));
+        List<Flower> flowers = new ArrayList<>();
+        Bouquet bouquet = new Bouquet(flowers, "FlowerWar 17", TypeOfPackage.BASKET); // FIXME: 24.12.2022 
+        bouquet.addFlower(Flower.GERBERA, 4);
+        bouquet.addFlower(Flower.DAISY, 5);
+        Order order = new Order(10000, 24,bouquet,2, 1); // FIXME: 24.12.2022 
+        order.toStringOrder();
     }
 }

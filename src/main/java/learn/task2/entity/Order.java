@@ -1,19 +1,22 @@
 package learn.task2.entity;
 
-import java.util.StringJoiner;
+import java.util.List;
+import java.util.Locale;
 
 public class Order {
     private int numberOfOrder;
     private int numberOfClient;
     private Bouquet bouquet;
 
-    private int amount;
+    private int amountOfBouquets;
+    private int amountOfPackage;
 
-    public Order(int numberOfOrder, int numberOfClient, Bouquet bouquet, int amount) {
+    public Order(int numberOfOrder, int numberOfClient, Bouquet bouquet, int amountOfBouquets, int getAmountOfPackage) {
         this.numberOfOrder = numberOfOrder;
         this.numberOfClient = numberOfClient;
         this.bouquet = bouquet;
-        this.amount = amount;
+        this.amountOfBouquets = amountOfBouquets;
+        this.amountOfPackage = amountOfBouquets;
     }
 
     public int getNumberOfOrder() {
@@ -40,21 +43,33 @@ public class Order {
         this.bouquet = bouquet;
     }
 
-    public int getAmount() {
-        return amount;
+    public int getAmountOfBouquets() {
+        return amountOfBouquets;
     }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
+    public void setAmountOfBouquets(int amount) {
+        this.amountOfBouquets = amount;
     }
 
-    @Override
-    public String toString() {
-        return new StringJoiner(", ", Order.class.getSimpleName() + "[", "]")
-                .add("numberOfOrder=" + numberOfOrder)
-                .add("numberOfClient=" + numberOfClient)
-                .add("bouquet=" + bouquet)
-                .add("amount=" + amount)
-                .toString();
+    public int getAmountOfPackage() {
+        return amountOfPackage;
+    }
+
+    public void setAmountOfPackage(int amountOfPackage) {
+        this.amountOfPackage = amountOfPackage;
+    }
+
+    public void toStringOrder(){
+        System.out.println("* ".repeat(20));
+        System.out.println("Order: " + getNumberOfOrder());
+        System.out.println("Client: " + getNumberOfClient());
+        System.out.println("Name of bouquet: " + bouquet.getBouquetName());
+        System.out.println("- ".repeat(20));
+        System.out.printf("Base "+ "( " + bouquet.getTypeOfPackage() +" )" + "%18x" + "%7.2f",getAmountOfPackage(), bouquet.getTypeOfPackage().getPriceOfPackage());
+        for (int i = 0; i<bouquet.getListOfFlower().size(); i++){
+            System.out.println();
+            System.out.printf(bouquet.getListOfFlower().get(i).toString().substring(1).toLowerCase() + "%26x" + "%7.2f",bouquet.getListOfFlower().get(i).getAmountOfFlower(),bouquet.getListOfFlower().get(i).getPrice());
+
+        }
     }
 }

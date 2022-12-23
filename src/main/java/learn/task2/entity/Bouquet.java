@@ -1,17 +1,20 @@
 package learn.task2.entity;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.StringJoiner;
 
 public class Bouquet {
-    private List<Flower> listOfFlower = new ArrayList<>();
+    static final int MIN_SIZE_NAME_OF_BOUQUET = 4;
+    static final int MAX_SIZE_NAME_OF_BOUQUET = 20;
+    static final int MAX_SIZE_OF_BOUQUET = 8;
+    private List<Flower> listOfFlower;
     private String bouquetName;
-    private String[] typeOfPackage = {"regular", "basket"};
+    private TypeOfPackage typeOfPackage;
 
-    public Bouquet(List<Flower> listOfFlower) {
+    public Bouquet(List<Flower> listOfFlower, String bouquetName, TypeOfPackage typeOfPackage) {
         this.listOfFlower = listOfFlower;
+        setBouquetName(bouquetName);
+        this.typeOfPackage = typeOfPackage;
     }
 
     public List<Flower> getListOfFlower() {
@@ -27,11 +30,32 @@ public class Bouquet {
     }
 
     public void setBouquetName(String bouquetName) {
-        this.bouquetName = bouquetName;
+        if (bouquetName.length() >= MIN_SIZE_NAME_OF_BOUQUET && bouquetName.length() <= MAX_SIZE_NAME_OF_BOUQUET){
+            this.bouquetName = bouquetName;
+        }else this.bouquetName = "Client ";
     }
 
-    public String[] getTypeOfPackage() {
+    public TypeOfPackage getTypeOfPackage() {
         return typeOfPackage;
+    }
+
+    public void setTypeOfPackage(TypeOfPackage typeOfPackage) {
+        this.typeOfPackage = typeOfPackage;
+    }
+
+
+    public void addFlower(Flower typeOfFlower, int amountOfFlower){
+        if (listOfFlower.size()>MAX_SIZE_OF_BOUQUET){
+            System.out.println("The bouquet already has all kinds of flowers");
+        }
+        if (listOfFlower.contains(typeOfFlower)){
+            listOfFlower.remove(typeOfFlower);
+            listOfFlower.add(typeOfFlower);
+            typeOfFlower.setAmountOfFlower(amountOfFlower);
+        }else if(!listOfFlower.contains(typeOfFlower)) {
+            listOfFlower.add(typeOfFlower);
+            typeOfFlower.setAmountOfFlower(amountOfFlower);
+        }
     }
 
     @Override
@@ -39,7 +63,7 @@ public class Bouquet {
         return new StringJoiner(", ", Bouquet.class.getSimpleName() + "[", "]")
                 .add("listOfFlower=" + listOfFlower)
                 .add("bouquetName='" + bouquetName + "'")
-                .add("typeOfPackage=" + Arrays.toString(typeOfPackage))
+                .add("typeOfPackage=" + typeOfPackage)
                 .toString();
     }
 }

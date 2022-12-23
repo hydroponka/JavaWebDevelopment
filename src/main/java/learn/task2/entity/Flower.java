@@ -1,29 +1,28 @@
 package learn.task2.entity;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.StringJoiner;
+public enum Flower {
+    TULIP(2, 0),
+    ROSE(3, 0),
+    NARCISSE(1.5, 0),
+    SUNFLOWER(5, 0),
+    GERBERA(2, 0),
+    CHRYSANTHEMUM(0.9, 0),
+    DAISY(1.3, 0),
+    POPPY(0.7, 0);
 
-
-public class Flower {
-    private String name;
-
-    public Flower(String name) {
-        this.name = name;
+    private double priceOfFlower;
+    private int amountOfFlower;
+    Flower(double priceOfFlower, int amountOfFlower){
+        this.priceOfFlower = priceOfFlower;
+        setAmountOfFlower(amountOfFlower);
     }
-
-    public String getName() {
-        return name;
+    public double getPrice(){
+        return priceOfFlower;
     }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setAmountOfFlower(int amountOfFlower){
+        this.amountOfFlower = amountOfFlower;
     }
-
-    @Override
-    public String toString() {
-        return new StringJoiner(", ", Flower.class.getSimpleName() + "[", "]")
-                .add("name='" + name + "'")
-                .toString();
+    public int getAmountOfFlower(){
+        return amountOfFlower;
     }
 }

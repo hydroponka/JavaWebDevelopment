@@ -1,0 +1,13 @@
+20:01:03.372 [main] ERROR BouquetAttributeOutputImpl - attributeOutput = fgdggfgd
+20:01:03.375 [main] INFO  BouquetAttributeOutputImpl - attributeOutput = fgdggfgd
+20:06:16.417 [main] ERROR BouquetAttributeOutputImpl - attributeOutput = htrht
+20:06:16.420 [main] INFO  BouquetAttributeOutputImpl - attributeOutput = htrht
+20:06:16.426 [main] ERROR BouquetAttributeOutputImpl - attributeOutput = htrht
+20:06:16.426 [main] INFO  BouquetAttributeOutputImpl - attributeOutput = htrht
+20:06:16.426 [main] INFO  TestWithSout - output = 2434324 : 434 : htrht : 34
+21:25:53.943 [main] ERROR BouquetAttributeOutputImpl - attributeOutput = gugu
+21:25:53.967 [main] INFO  BouquetAttributeOutputImpl - attributeOutput = gugu
+21:25:54.060 [main] ERROR BouquetAttributeOutputImpl - attributeOutput = gugu
+21:25:54.060 [main] INFO  BouquetAttributeOutputImpl - attributeOutput = gugu
+21:25:54.061 [main] INFO  TestWithSout - output = 567777 : 676 : gugu : 6
+21:48:37.636 [main] INFO  BouquetTest - addFlower = {}
