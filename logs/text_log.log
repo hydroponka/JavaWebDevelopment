@@ -11,3 +11,96 @@
 21:25:54.060 [main] INFO  BouquetAttributeOutputImpl - attributeOutput = gugu
 21:25:54.061 [main] INFO  TestWithSout - output = 567777 : 676 : gugu : 6
 21:48:37.636 [main] INFO  BouquetTest - addFlower = {}
+17:40:41.199 [main] INFO  BouquetTest - bouquetPrice = 0
+17:42:25.824 [main] INFO  BouquetTest - bouquetPrice = 0
+17:45:13.116 [main] INFO  BouquetTest - bouquetPrice = 0
+17:45:18.999 [main] INFO  BouquetTest - bouquetPrice = 8
+17:46:31.538 [main] INFO  BouquetTest - bouquetPrice = 8
+17:48:22.347 [main] INFO  BouquetTest - bouquetPrice = 8
+17:50:02.414 [main] INFO  BouquetTest - bouquetPrice = 2.0
+17:51:12.555 [main] INFO  BouquetTest - bouquetPrice = 8.0
+17:53:02.685 [main] INFO  BouquetTest - bouquetPrice = 5.0
+18:06:59.277 [main] INFO  OrderTest - bouquetPrice = 5.0
+18:09:57.599 [main] INFO  OrderTest - bouquetPrice = 5.0
+18:10:10.729 [main] INFO  OrderTest - bouquetPrice = 2.9
+18:10:48.752 [main] INFO  OrderTest - bouquetPrice = 2.9
+18:12:45.321 [main] INFO  OrderTest - bouquetPrice = 7.9
+18:14:20.055 [main] INFO  OrderTest - bouquetPrice = 0.0
+18:16:52.783 [main] INFO  BouquetTest - bouquetPrice = 18.0
+18:19:41.772 [main] INFO  BouquetTest - bouquetPrice = 18.0
+18:19:56.718 [main] INFO  BouquetTest - bouquetPrice = 18.0
+18:20:55.431 [main] INFO  OrderTest - bouquetPrice = 0.0
+18:20:58.000 [main] INFO  OrderTest - bouquetPrice = 0.0
+18:28:49.287 [main] INFO  OrderTest - bouquetPrice = 0.0
+18:35:49.723 [main] INFO  OrderTest - bouquetPrice = 77.4
+19:09:33.783 [main] INFO  OrderTest - bouquetPrice = 325.0
+19:09:37.036 [main] INFO  OrderTest - bouquetPrice = 325.0
+19:30:12.772 [main] INFO  CalculateOrderPrice - orderprice = 170.0
+19:30:52.881 [main] INFO  CalculateOrderPrice - orderprice = 165.0
+19:31:16.518 [main] INFO  CalculateOrderPrice - orderprice = 170.0
+19:31:23.474 [main] INFO  CalculateOrderPrice - orderprice = 145.0
+19:31:31.734 [main] INFO  CalculateOrderPrice - orderprice = 115.0
+19:31:38.143 [main] INFO  CalculateOrderPrice - orderprice = 65.0
+19:31:44.446 [main] INFO  CalculateOrderPrice - orderprice = 45.0
+19:31:53.833 [main] INFO  CalculateOrderPrice - orderprice = 18.0
+19:32:11.921 [main] INFO  CalculateOrderPrice - orderprice = 27.0
+19:32:34.482 [main] INFO  CalculateOrderPrice - orderprice = 27.0
+19:36:09.898 [main] INFO  addAmountOfBouquetTest - orderprice = 4
+19:38:58.606 [main] INFO  addBouquetTest - ListOfBouquets = [Bouquet[listOfFlower=[GERBERA, DAISY], bouquetName='FlowerWar 17', typeOfPackage=BASKET, bouquetsPrice=3.3]]
+19:38:58.608 [main] INFO  addBouquetTest - ListOfBouquets = [Bouquet[listOfFlower=[GERBERA, DAISY], bouquetName='FlowerWar 17', typeOfPackage=BASKET, bouquetsPrice=3.3], Bouquet[listOfFlower=[SUNFLOWER, DAISY], bouquetName='FloweWar 18', typeOfPackage=REGULAR, bouquetsPrice=6.3]]
+19:42:22.384 [main] INFO  ChangeAmountOfBouquetTest - AmountOfBouquets = 2
+19:42:22.386 [main] INFO  ChangeAmountOfBouquetTest - AmountOfBouquets = 4
+19:42:49.861 [main] INFO  ChangeAmountOfBouquetTest - AmountOfBouquets = 2
+19:42:49.863 [main] INFO  ChangeAmountOfBouquetTest - AmountOfBouquets = 4
+19:42:49.863 [main] INFO  ChangeAmountOfBouquetTest - AmountOfBouquets = 6
+19:42:59.668 [main] INFO  ChangeAmountOfBouquetTest - AmountOfBouquets = 2
+19:42:59.670 [main] INFO  ChangeAmountOfBouquetTest - AmountOfBouquets = 4
+19:42:59.670 [main] INFO  ChangeAmountOfBouquetTest - AmountOfBouquets = 2
+19:47:18.264 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 2
+19:47:18.267 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 4
+19:47:18.267 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 3
+19:47:18.268 [main] INFO  deleteAmountOfBouquetTest - ListOfBouquets = [Bouquet[listOfFlower=[GERBERA, DAISY], bouquetName='FlowerWar 17', typeOfPackage=BASKET, bouquetsPrice=3.3], Bouquet[listOfFlower=[SUNFLOWER, DAISY], bouquetName='FloweWar 18', typeOfPackage=REGULAR, bouquetsPrice=6.3]]
+19:48:00.074 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 2
+19:48:00.076 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 4
+19:48:00.076 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 3
+19:48:00.078 [main] INFO  deleteAmountOfBouquetTest - ListOfBouquets = [Bouquet[listOfFlower=[GERBERA, DAISY], bouquetName='FlowerWar 17', typeOfPackage=BASKET, bouquetsPrice=3.3], Bouquet[listOfFlower=[SUNFLOWER, DAISY], bouquetName='FloweWar 18', typeOfPackage=REGULAR, bouquetsPrice=6.3]]
+19:48:21.876 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 2
+19:48:21.878 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 4
+19:48:21.878 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 3
+19:48:21.880 [main] INFO  deleteAmountOfBouquetTest - ListOfBouquets = [Bouquet[listOfFlower=[GERBERA, DAISY], bouquetName='FlowerWar 17', typeOfPackage=BASKET, bouquetsPrice=3.3], Bouquet[listOfFlower=[SUNFLOWER, DAISY], bouquetName='FloweWar 18', typeOfPackage=REGULAR, bouquetsPrice=6.3]]
+19:52:45.873 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 2
+19:52:45.874 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 4
+19:52:45.874 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 3
+19:52:45.876 [main] INFO  deleteAmountOfBouquetTest - ListOfBouquets = [Bouquet[listOfFlower=[GERBERA, DAISY], bouquetName='FlowerWar 17', typeOfPackage=BASKET, bouquetsPrice=3.3], Bouquet[listOfFlower=[SUNFLOWER, DAISY], bouquetName='FloweWar 18', typeOfPackage=REGULAR, bouquetsPrice=6.3]]
+19:52:45.876 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = -2
+20:06:13.887 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 2
+20:06:13.889 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 4
+20:06:13.889 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 3
+20:06:13.891 [main] INFO  deleteAmountOfBouquetTest - ListOfBouquets = [Bouquet[listOfFlower=[SUNFLOWER, DAISY], bouquetName='FloweWar 18', typeOfPackage=REGULAR, bouquetsPrice=6.3]]
+20:06:13.891 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 3
+20:09:24.787 [main] INFO  ChangeAmountOfBouquetTest - AmountOfBouquets = 2
+20:09:24.790 [main] INFO  ChangeAmountOfBouquetTest - AmountOfBouquets = 4
+20:09:24.790 [main] INFO  ChangeAmountOfBouquetTest - AmountOfBouquets = 2
+20:09:35.886 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 2
+20:09:35.889 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 4
+20:09:35.889 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 3
+20:09:35.890 [main] INFO  deleteAmountOfBouquetTest - ListOfBouquets = [Bouquet[listOfFlower=[SUNFLOWER, DAISY], bouquetName='FloweWar 18', typeOfPackage=REGULAR, bouquetsPrice=6.3]]
+20:09:35.891 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 2
+20:10:10.767 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 4
+20:10:10.767 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 7
+20:10:10.768 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 6
+20:10:10.769 [main] INFO  deleteAmountOfBouquetTest - ListOfBouquets = [Bouquet[listOfFlower=[GERBERA, DAISY], bouquetName='FlowerWar 17', typeOfPackage=BASKET, bouquetsPrice=3.3], Bouquet[listOfFlower=[SUNFLOWER, DAISY], bouquetName='FloweWar 18', typeOfPackage=REGULAR, bouquetsPrice=6.3]]
+20:10:10.769 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 1
+20:10:34.010 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 10
+20:10:34.011 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 20
+20:10:34.011 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 19
+20:10:34.012 [main] INFO  deleteAmountOfBouquetTest - ListOfBouquets = [Bouquet[listOfFlower=[SUNFLOWER, DAISY], bouquetName='FloweWar 18', typeOfPackage=REGULAR, bouquetsPrice=6.3]]
+20:10:34.013 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 18
+20:12:11.517 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 10
+20:12:11.519 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 20
+20:12:11.519 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 19
+20:12:11.521 [main] INFO  deleteAmountOfBouquetTest - ListOfBouquets = [Bouquet[listOfFlower=[GERBERA, DAISY], bouquetName='FlowerWar 17', typeOfPackage=BASKET, bouquetsPrice=3.3], Bouquet[listOfFlower=[SUNFLOWER, DAISY], bouquetName='FloweWar 18', typeOfPackage=REGULAR, bouquetsPrice=6.3]]
+20:12:11.521 [main] INFO  deleteAmountOfBouquetTest - AmountOfBouquets = 14
+20:12:31.520 [main] INFO  ChangeAmountOfBouquetTest - AmountOfBouquets = 2
+20:12:31.522 [main] INFO  ChangeAmountOfBouquetTest - AmountOfBouquets = 4
+20:12:31.522 [main] INFO  ChangeAmountOfBouquetTest - AmountOfBouquets = 2
