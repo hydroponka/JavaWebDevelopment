@@ -9,8 +9,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class TestWithSout {
-    static Logger logger = LogManager.getLogger();
-
     public static void main(String[] args) {
         Bouquet bouquet = new Bouquet("FlowerWar 17", TypeOfPackage.BASKET, 1);
         Bouquet bouquet2 = new Bouquet("FlowerWar 18", TypeOfPackage.REGULAR, 1);

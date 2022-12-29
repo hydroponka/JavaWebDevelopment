@@ -2,6 +2,7 @@ package by.Ageenko.learn.task2.service.impl;
 
 import by.Ageenko.learn.task2.entity.Order;
 import by.Ageenko.learn.task2.service.BouquetOutputService;
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -48,7 +49,7 @@ public class BouquetOutputServiceImpl implements BouquetOutputService {
             writer.flush();
         } catch (IOException ex) {
 
-            System.out.println(ex.getMessage());
+            logger.log(Level.ERROR,ex.getMessage());
         }
     }
 }
