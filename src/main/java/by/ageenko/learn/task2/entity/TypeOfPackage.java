@@ -1,4 +1,4 @@
-package by.Ageenko.learn.task2.entity;
+package by.ageenko.learn.task2.entity;
 
 public enum TypeOfPackage {
     REGULAR(2),

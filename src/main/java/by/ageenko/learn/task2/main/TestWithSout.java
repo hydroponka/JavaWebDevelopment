@@ -1,15 +1,20 @@
-package by.Ageenko.learn.task2.main;
+package by.ageenko.learn.task2.main;
 
-import by.Ageenko.learn.task2.entity.Bouquet;
-import by.Ageenko.learn.task2.entity.Order;
-import by.Ageenko.learn.task2.entity.FlowerType;
-import by.Ageenko.learn.task2.entity.TypeOfPackage;
-import by.Ageenko.learn.task2.service.impl.BouquetOutputServiceImpl;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import by.ageenko.learn.task2.entity.Bouquet;
+import by.ageenko.learn.task2.entity.Order;
+import by.ageenko.learn.task2.entity.FlowerType;
+import by.ageenko.learn.task2.entity.TypeOfPackage;
+import by.ageenko.learn.task2.service.impl.OrderInputService;
+import by.ageenko.learn.task2.service.impl.OrderOutputServiceImpl;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.List;
 
 public class TestWithSout {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Bouquet bouquet = new Bouquet("FlowerWar 17", TypeOfPackage.BASKET, 1);
         Bouquet bouquet2 = new Bouquet("FlowerWar 18", TypeOfPackage.REGULAR, 1);
         bouquet.addFlower(FlowerType.GERBERA, 4);
@@ -19,8 +24,10 @@ public class TestWithSout {
         Order order = new Order();
         order.addBouquet(bouquet);
         order.addBouquet(bouquet2);
-        BouquetOutputServiceImpl bouquetOutputService = new BouquetOutputServiceImpl();
+        OrderOutputServiceImpl bouquetOutputService = new OrderOutputServiceImpl();
         bouquetOutputService.attributeOutput(order);
-        bouquetOutputService.fileWriter(bouquetOutputService.attributeOutput(order));
+        bouquetOutputService.fileWriter(bouquetOutputService.attributeOutput(order), "bill.txt");
+        OrderInputService orderInputService = new OrderInputService();
+        String filePath = "bill.txt";
     }
 }

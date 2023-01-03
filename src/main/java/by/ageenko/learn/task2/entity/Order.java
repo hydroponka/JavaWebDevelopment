@@ -1,5 +1,6 @@
-package by.Ageenko.learn.task2.entity;
+package by.ageenko.learn.task2.entity;
 
+import by.ageenko.learn.task2.generator.NumberGenerator;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,10 +20,8 @@ public class Order {
     private List<Bouquet> listOfBouquets = new ArrayList<>();
 
     public Order() {
-        this.numberOfClient++;
-        if (numberOfOrder<=MAX_SIZE_OF_NUMBER_OF_ORDER && numberOfOrder>=MIN_SIZE_OF_NUMBER_OF_ORDER){
-            numberOfOrder++;
-        }
+        this.numberOfOrder = NumberGenerator.generateNumberOfOrder();
+        this.numberOfClient = NumberGenerator.generateNumberOfClient();
     }
 
     public List<Bouquet> getListOfBouquets() {
@@ -35,13 +34,14 @@ public class Order {
     public int getNumberOfClient() {
         return numberOfClient;
     }
-    public void addBouquet(Bouquet bouquet){
-        if (bouquet.getAmountOfBouquets() == 0){
-            logger.log(Level.INFO,"Number of bouquets must be positive", bouquet.getAmountOfBouquets());
-        }else {
+
+    public void addBouquet(Bouquet bouquet) {
+        if (bouquet.getAmountOfBouquets() > 0) {
             listOfBouquets.add(bouquet);
+        } else {
+            logger.log(Level.ERROR, "Number of bouquets must be positive", bouquet.getAmountOfBouquets());;
         }
-        if (bouquet.getBouquetName().length() <= MIN_SIZE_OF_BOUQUET_NAME && bouquet.getBouquetName().length() >= MAX_SIZE_OF_BOUQUET_NAME ){
+        if (bouquet.getBouquetName().length() <= MIN_SIZE_OF_BOUQUET_NAME && bouquet.getBouquetName().length() >= MAX_SIZE_OF_BOUQUET_NAME) {
             bouquet.setBouquetName("Client " + numberOfOrder);
         }
     }
