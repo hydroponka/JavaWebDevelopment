@@ -3,8 +3,6 @@
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 w
 G.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec,8\6\863e0292fd7e9b3e74dafd6cc01f73ba76346482
-j
-:src/main/java/learn/task1/service/WeightBallsInBasket.java,5\f\5ff555014fcfdd0dac6600f2903888ac90c53d07
 w
 G.idea/sonarlint/issuestore/8/6/863e0292fd7e9b3e74dafd6cc01f73ba76346482,3\0\30f9777ea696a18aa49d3e9967e93a4276065227
 H
