@@ -13,5 +13,3 @@ H
 	check.txt,7\6\7694de1447253a56314e5bde861475ab40735374
 t
 Dsrc/main/java/by/ageenko/learn/task2/service/OrderOutputService.java,4\2\4286883727dbb2982d8a2ef656a0cf0a9d4bac17
-j
-:src/test/java/by/ageenko/learn/task2/entity/OrderTest.java,f\3\f33c7f206f023a15bf21a7f202e424b339833149

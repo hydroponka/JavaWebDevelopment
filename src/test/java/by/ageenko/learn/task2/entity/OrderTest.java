@@ -1,4 +1,4 @@
-package by.Ageenko.learn.task2.entity;
+package by.ageenko.learn.task2.entity;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
